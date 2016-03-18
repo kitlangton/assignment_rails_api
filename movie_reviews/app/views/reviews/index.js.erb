@@ -1,0 +1,5 @@
+$('input[type=text]').val("")
+var newReview = $("<%= j(render @reviews) %>")
+newReview.css("display", "none")
+$("#review-list").append( newReview );
+newReview.fadeIn(1000);

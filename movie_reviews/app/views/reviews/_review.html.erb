@@ -1,0 +1,8 @@
+<tr id='review-<%= review.id %>'>
+  <td><%= review.movie.title %></td>
+  <td><%= review.reviewer_name %></td>
+  <td><%= review.title.first(10) %></td>
+  <td><%= review.review_text.first(50) + "..." %></td>
+  <td><%= review.review_date %></td>
+  <td><%= link_to "Delete", review, method: :delete, remote: true %></td>
+</tr>
